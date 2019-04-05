@@ -3,11 +3,37 @@ Api
 
 //Routes
 [POST] /create-rule
-JSON EXAMPLE:
+JSON EXAMPLE Weekly:
 {
 	"day": null,
-  "weekly": "3",
+  	"weekly": "3",
 	"type": "weekly",
+	"intervals": [
+		{
+			"start": "09:00",
+			"end": "10:00"
+		}
+	]
+}
+
+JSON EXAMPLE single:
+{
+	"day": "02-02-2019",
+  	"weekly": null,
+	"type": "single",
+	"intervals": [
+		{
+			"start": "09:00",
+			"end": "10:00"
+		}
+	]
+}
+
+JSON EXAMPLE daily:
+{
+	"day": null,
+  	"weekly": null,
+	"type": "daily",
 	"intervals": [
 		{
 			"start": "09:00",
